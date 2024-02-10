@@ -1,0 +1,33 @@
+<ng-container *ngIf="!!submittedUser; then emailInfo; else signUpForm"></ng-container>
+
+<ng-template #signUpForm>
+
+  <form *ngIf="!signingInProgress && !mailException">
+
+    <h2>Sign up</h2>
+
+    <input type="email" [(ngModel)]="signingUser.email" placeholder="{{ emailPlaceholder }}" name="email">
+    <input type="text" [(ngModel)]="signingUser.name" placeholder="{{ namePlaceholder }}" name="name">
+    <input type="password" [(ngModel)]="signingUser.password" placeholder="{{ passwordPlaceholder }}" name="password">
+    <button (click)="signUp()">Sign up</button>
+    <h6></h6>
+
+    <h3>Already have an account? <a routerLink="/sign-in">Sign in</a></h3>
+
+  </form>
+
+  <div *ngIf="!!signingInProgress">
+    <h2>Processing...</h2>
+  </div>
+
+  <div *ngIf="!!mailException">
+    <h2>We can't send you an activation code. Please try again later. {{ mailException }}</h2>
+  </div>
+
+</ng-template>
+
+<ng-template #emailInfo>
+
+  <h2>{{ submittedUser?.name }} activate your account by clicking the activation link sent to your e-mail address {{ submittedUser?.email }} and then <a routerLink="/sign-in">Sign in</a></h2>
+
+</ng-template>

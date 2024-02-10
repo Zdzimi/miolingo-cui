@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx run miolingo-cui:serve",
+    "startTime": "2024-02-10T16:16:40.779Z",
+    "endTime": "2024-02-10T18:28:20.688Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "miolingo-cui:serve:development",
+      "target": "serve",
+      "projectName": "miolingo-cui",
+      "hash": "10958738147837576740",
+      "startTime": "2024-02-10T16:16:40.820Z",
+      "endTime": "2024-02-10T18:28:20.681Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}

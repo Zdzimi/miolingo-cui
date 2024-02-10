@@ -1,0 +1,12 @@
+<form>
+
+  <h2>Sign in</h2>
+
+  <input type="email" [(ngModel)]="credentials.email" placeholder="{{ emailPlaceholder }}" name="email">
+  <input type="password" [(ngModel)]="credentials.password" placeholder="{{ passwordPlaceholder }}" name="password">
+  <button (click)="signIn()">Sign up</button>
+  <h6 *ngIf="!!signInFailedInfo">{{ signInFailedInfo }}</h6>
+
+  <h3>Don't have an account? <a routerLink="/sign-up">Sign up</a></h3>
+
+</form>

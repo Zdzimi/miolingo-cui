@@ -31,7 +31,7 @@ export class SignUpComponent implements OnInit {
 
   ngOnInit(): void {
     if (this.authService.signedIn) {
-      this.router.navigate(['/main']);
+      this.router.navigate(['/dashboard']);
     }
   }
 

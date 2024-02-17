@@ -20,7 +20,7 @@ export class AuthenticationService {
   }
 
   setCredentials(credentials: Credentials): void {
-    localStorage.setItem('auth', btoa(`${credentials.email};${credentials.password}`));
+    localStorage.setItem('auth', btoa(`${credentials.email}:${credentials.password}`));
     this.setSignedInStatus(true);
   }
 

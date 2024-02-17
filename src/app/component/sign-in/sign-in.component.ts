@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { Credentials } from 'src/app/model/credentials';
 import { AuthenticationService } from 'src/app/service/authentication.service';
 import { HttpService } from 'src/app/service/http.service';
+import { UserService } from 'src/app/service/user.service';
 
 @Component({
   selector: 'app-sign-in',
@@ -20,12 +21,13 @@ export class SignInComponent implements OnInit {
   constructor(
     private httpService: HttpService,
     private router: Router,
-    private authService: AuthenticationService
+    private authService: AuthenticationService,
+    private userService: UserService
   ) { }
 
   ngOnInit(): void {
     if (this.authService.signedIn) {
-      this.router.navigate(['/main']);
+      this.router.navigate(['/dashboard']);
     }
   }
 
@@ -33,8 +35,8 @@ export class SignInComponent implements OnInit {
     this.authService.setCredentials(this.credentials);
     this.httpService.signIn().subscribe(
       res => {
-        this.authService.clearCredentials();
-        this.router.navigate(['/main']);
+        this.userService.setUser(res);
+        this.router.navigate(['/dashboard']);
       },
       err => {
         if (err instanceof HttpErrorResponse) {

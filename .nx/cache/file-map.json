@@ -34,28 +34,7 @@
   "pathMappings": {},
   "nxJsonPlugins": [],
   "fileMap": {
-    "nonProjectFiles": [
-      {
-        "file": "src/app/model/signingUser.ts",
-        "hash": "7415665146394111839"
-      },
-      {
-        "file": "src/app/model/violationsResponse.ts",
-        "hash": "8769158790242621070"
-      },
-      {
-        "file": "src/app/component/sign-up/sign-up.component.ts",
-        "hash": "8818502700563167650"
-      },
-      {
-        "file": "src/app/component/sign-up/sign-up.component.html",
-        "hash": "4711763322398066765"
-      },
-      {
-        "file": "src/app/model/violation.ts",
-        "hash": "12568683421589653021"
-      }
-    ],
+    "nonProjectFiles": [],
     "projectFileMap": {
       "miolingo-cui": [
         {
@@ -130,7 +109,7 @@
         },
         {
           "file": "src/app/app-routing.module.ts",
-          "hash": "9021716127475779410",
+          "hash": "16825331187568262628",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router"
@@ -197,7 +176,7 @@
         },
         {
           "file": "src/app/component/header/header.component.html",
-          "hash": "5043939664568487550"
+          "hash": "3317373839034429678"
         },
         {
           "file": "src/app/component/header/header.component.spec.ts",
@@ -208,9 +187,10 @@
         },
         {
           "file": "src/app/component/header/header.component.ts",
-          "hash": "8420120631935814218",
+          "hash": "1311446505512373210",
           "deps": [
-            "npm:@angular/core"
+            "npm:@angular/core",
+            "npm:@angular/router"
           ]
         },
         {
@@ -219,7 +199,7 @@
         },
         {
           "file": "src/app/component/main/main.component.html",
-          "hash": "14702717708078270114"
+          "hash": "16010194978753942716"
         },
         {
           "file": "src/app/component/main/main.component.spec.ts",
@@ -230,9 +210,10 @@
         },
         {
           "file": "src/app/component/main/main.component.ts",
-          "hash": "2640258622553561715",
+          "hash": "4090891321058203182",
           "deps": [
-            "npm:@angular/core"
+            "npm:@angular/core",
+            "npm:@angular/router"
           ]
         },
         {
@@ -274,7 +255,7 @@
         },
         {
           "file": "src/app/component/sign-in/sign-in.component.ts",
-          "hash": "5814187362874655636",
+          "hash": "15712707676746499380",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -287,7 +268,7 @@
         },
         {
           "file": "src/app/component/sign-up/sign-up.component.html",
-          "hash": "8859154994958507404"
+          "hash": "4711763322398066765"
         },
         {
           "file": "src/app/component/sign-up/sign-up.component.spec.ts",
@@ -298,7 +279,7 @@
         },
         {
           "file": "src/app/component/sign-up/sign-up.component.ts",
-          "hash": "17078303975254143712",
+          "hash": "3353826351887520253",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -311,11 +292,23 @@
         },
         {
           "file": "src/app/model/signingUser.ts",
-          "hash": "5659764112363519689"
+          "hash": "7415665146394111839"
         },
         {
           "file": "src/app/model/submittedUser.ts",
           "hash": "1798872756534594147"
+        },
+        {
+          "file": "src/app/model/user.ts",
+          "hash": "9297085651699523529"
+        },
+        {
+          "file": "src/app/model/violation.ts",
+          "hash": "12568683421589653021"
+        },
+        {
+          "file": "src/app/model/violationsResponse.ts",
+          "hash": "8769158790242621070"
         },
         {
           "file": "src/app/service/authentication.service.spec.ts",
@@ -326,7 +319,7 @@
         },
         {
           "file": "src/app/service/authentication.service.ts",
-          "hash": "4932652401053942995",
+          "hash": "10692107290813474267",
           "deps": [
             "npm:@angular/core",
             "npm:rxjs"
@@ -357,7 +350,7 @@
         },
         {
           "file": "src/app/service/http.service.ts",
-          "hash": "16597025452630669339",
+          "hash": "13767145715210011050",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -373,9 +366,10 @@
         },
         {
           "file": "src/app/service/user.service.ts",
-          "hash": "10805715437110380439",
+          "hash": "11089698453827520820",
           "deps": [
-            "npm:@angular/core"
+            "npm:@angular/core",
+            "npm:rxjs"
           ]
         },
         {
